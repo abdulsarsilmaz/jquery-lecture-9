@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Jquery first-child selector</title>
+        <script src="../jquery-3.0.0.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("#btn").click(function(){
+              $("p:first-child").css("color","red");
+          });
+        })
+        </script>
+    </head>
+    <body>
+       <div>
+            <p>I love jQuery 1 time</p>
+            <p>I love jQuery 2 times</p>
+            <p>I love jQuery 3 times</p>
+            <p>I love jQuery 4 times</p>
+       </div>
+       <input type="submit" id="btn" value="set css to first-child of div">
+    </body>
+</html>
